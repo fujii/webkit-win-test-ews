@@ -1,6 +1,7 @@
 path %ProgramFiles(x86)%\Microsoft Visual Studio\Installer;%path%
 for /F "usebackq delims=" %%I in (`vswhere.exe -products * -latest -property installationPath`) do set VSPATH=%%I
 call "%VSPATH%\VC\Auxiliary\Build\vcvars64.bat"
+echo on
 
 set WEBKIT_LIBRARIES=c:\ews\libs
 if not exist %WEBKIT_LIBRARIES% mkdir %WEBKIT_LIBRARIES%
