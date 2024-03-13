@@ -13,6 +13,9 @@ set TMP=C:\ews\temp
 set CC=clang-cl
 set CXX=clang-cl
 
+rem store "Amazon Root CA1" cert
+curl.exe -I https://aws.amazon.com/
+
 C:
 cd \ews
 buildbot-worker start
