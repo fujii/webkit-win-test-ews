@@ -12,3 +12,6 @@ reg add HKEY_CLASSES_ROOT\.py\Shell\ExecCGI\Command /f /ve /d "c:\Python311\pyth
 netsh int ipv4 set dynamicport tcp start=1025 num=64511
 
 git config --system core.longpaths true
+
+C:\xampp\apache\bin\httpd.exe -k install
+sc config apache2.4 start= demand
