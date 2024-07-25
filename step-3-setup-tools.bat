@@ -13,7 +13,7 @@ netsh int ipv4 set dynamicport tcp start=1025 num=64511
 
 git config --system core.longpaths true
 
-# git-credential-manager popups a dialog. It blocks a buildbot worker.
+rem git-credential-manager popups a dialog. It blocks a buildbot worker.
 git config --system --unset credential.helper
 
 C:\xampp\apache\bin\httpd.exe -k install
