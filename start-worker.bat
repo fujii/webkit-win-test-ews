@@ -8,12 +8,12 @@ for /F "usebackq delims=" %%I in (`vswhere.exe -products * -latest -property ins
 call "%VSPATH%\VC\Auxiliary\Build\vcvars64.bat"
 echo on
 
-set WEBKIT_LIBRARIES=%bw_dir%libs
+set WEBKIT_LIBRARIES=%bw_dir%\libs
 if not exist %WEBKIT_LIBRARIES% mkdir %WEBKIT_LIBRARIES%
 
 set WEBKIT_TEST_CHILD_PROCESSES=4
-set TEMP=%bw_dir%temp
-set TMP=%bw_dir%temp
+set TEMP=%bw_dir%\temp
+set TMP=%bw_dir%\temp
 
 set CC=clang-cl
 set CXX=clang-cl
