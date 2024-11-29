@@ -1,4 +1,4 @@
-python -m pip install buildbot-worker==3.7.0
+python -m pip install buildbot-worker
 
 if not exist c:\ews mkdir c:\ews
 if not exist c:\ews\info mkdir c:\ews\info
