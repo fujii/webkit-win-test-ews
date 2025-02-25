@@ -7,3 +7,5 @@ set f=JavaScriptCore* WebCore* WebKit* aom* avif* brotli* cairo* crypto* harfbuz
 for /d %%i in (%f%) do rd /s/q %%i
 
 del /q %windir%\*.tmp
+del /q %windir%\Temp\*.tmp
+del /q %windir%\Temp\*.csp-report.txt
